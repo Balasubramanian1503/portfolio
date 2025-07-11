@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>V Bala Subramanian | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script>
+        // Simple fade-in animation for sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                sec.style.opacity = 0;
+                sec.style.transform = 'translateY(40px)';
+            });
+            let delay = 200;
+            sections.forEach(sec => {
+                setTimeout(() => {
+                    sec.style.transition = 'opacity 0.7s, transform 0.7s';
+                    sec.style.opacity = 1;
+                    sec.style.transform = 'translateY(0)';
+                }, delay);
+                delay += 200;
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>V Bala Subramanian</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>V Bala Subramanian</h2>
+        <p>Innovative Web Developer | B.Tech IT | Passionate about Clean Code & Creative Design</p>
+        <div style="margin-top:2rem;">
+            <a href="#projects" style="background:#ffd700;color:#222;padding:0.8rem 1.5rem;border-radius:30px;text-decoration:none;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.07);transition:background 0.2s;">See My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I’m <b>V Bala Subramanian</b>, a 3rd year B.Tech IT student. I specialize in front-end development and enjoy creating responsive, user-friendly websites using HTML, CSS, and JavaScript.<br>
+            <br>
+            <span style="color:#ffd700;font-weight:500;">Fun Fact:</span> I love turning complex problems into simple, beautiful, and intuitive designs!
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Basics</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal website to showcase my skills and projects using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Built a weather dashboard using JavaScript and OpenWeatherMap API for real-time weather updates.</p>
+        </div>
+        <div class="project-card">
+            <h3>Responsive Blog Template</h3>
+            <p>Designed a modern, mobile-friendly blog template with Bootstrap and custom CSS.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p>
+            <b>B.Tech Information Technology – 3rd Year</b><br>
+            Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College<br>
+            <span style="color:#ffd700;">2023 - 2027</span>
+        </p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form action="#" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div style="text-align:center;margin-top:1.5rem;">
+            <a href="mailto:vadivelbalu15@gmail.com" style="color:#222;text-decoration:none;font-weight:500;">
+                <img src="https://img.icons8.com/ios-filled/24/ffd700/new-post.png" alt="Email" style="vertical-align:middle;margin-right:6px;">vadivelbalu15@gmail.com
+            </a>
+            <br>
+            <a href="https://github.com/vadivelbalu15" target="_blank" style="color:#222;text-decoration:none;font-weight:500;">
+                <img src="https://img.icons8.com/ios-glyphs/24/ffd700/github.png" alt="GitHub" style="vertical-align:middle;margin-right:6px;"> GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 V Bala Subramanian | All rights reserved.</p>
+    </footer>
+</body>
+</html></a>
